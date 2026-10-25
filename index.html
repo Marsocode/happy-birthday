@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf6f0">
+  <title>С днём рождения ♡</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="config.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+  </header>
+
+  <main>
+    <h1>
+      С Днём Рождения,<br>
+      <em id="name">Дорогая!</em>
+    </h1>
+
+    <p class="intro">
+      Пусть в жизни будет больше уюта, ярких моментов,<br>
+      счастливых случайностей и поводов улыбаться!
+    </p>
+
+    <section class="card" aria-label="Праздничный торт со свечами">
+      <p class="handwriting">Твое главное задание - загадать желание!</p>
+
+      <span class="star star-one" aria-hidden="true">✧</span>
+      <span class="star star-two" aria-hidden="true">♡</span>
+      <span class="star star-three" aria-hidden="true">✦</span>
+
+      <div class="cake-scene">
+        <div class="candles" aria-label="Потушите три свечи">
+          <div class="candle">
+            <button class="flame"
+              aria-label="Потушить первую свечу"
+              aria-pressed="false"></button>
+          </div>
+
+          <div class="candle">
+            <button class="flame"
+              aria-label="Потушить вторую свечу"
+              aria-pressed="false"></button>
+          </div>
+
+          <div class="candle">
+            <button class="flame"
+              aria-label="Потушить третью свечу"
+              aria-pressed="false"></button>
+          </div>
+        </div>
+
+        <svg viewBox="0 0 360 220" class="cake"
+          role="img" aria-label="Розовый торт с кремом и бантом">
+          <ellipse cx="180" cy="190" rx="151" ry="21"
+            fill="#d9c9dc" opacity=".5"/>
+
+          <ellipse cx="180" cy="181" rx="147" ry="21"
+            fill="#fff8ee" stroke="#dac7d8" stroke-width="2"/>
+
+          <path d="M60 75 Q180 45 300 75
+                   L300 163 Q180 207 60 163Z"
+            fill="#e6a9bd"/>
+
+          <path d="M60 113 Q180 153 300 113
+                   M60 143 Q180 183 300 143"
+            fill="none" stroke="#f7cfdd" stroke-width="6"/>
+
+          <ellipse cx="180" cy="75" rx="120" ry="34"
+            fill="#fff1d8"/>
+
+          <path d="M60 75
+                   Q78 94 102 97 V117
+                   Q112 137 122 117 V103
+                   Q145 110 161 109 V130
+                   Q173 150 183 130 V109
+                   Q210 110 226 102 V119
+                   Q236 137 246 117 V98
+                   Q279 94 300 75
+                   Q180 142 60 75Z"
+            fill="#fff1d8"/>
+
+          <g fill="#fff7e8">
+            <circle cx="83" cy="72" r="10"/>
+            <circle cx="107" cy="61" r="10"/>
+            <circle cx="135" cy="54" r="10"/>
+            <circle cx="165" cy="51" r="10"/>
+            <circle cx="195" cy="51" r="10"/>
+            <circle cx="225" cy="55" r="10"/>
+            <circle cx="253" cy="62" r="10"/>
+            <circle cx="278" cy="73" r="10"/>
+            <circle cx="87" cy="143" r="3"/>
+            <circle cx="123" cy="154" r="3"/>
+            <circle cx="237" cy="154" r="3"/>
+            <circle cx="273" cy="143" r="3"/>
+          </g>
+
+          <g fill="none" stroke="#ad7d98"
+             stroke-width="3" stroke-linecap="round">
+            <path d="M180 158
+                     C132 122 135 181 180 158
+                     C225 122 228 181 180 158
+                     M180 158 L161 185
+                     M180 158 L199 185"/>
+          </g>
+        </svg>
+      </div>
+
+      <div id="confetti" aria-hidden="true"></div>
+    </section>
+
+    <section class="interaction" aria-live="polite">
+      <div class="instruction-line">
+        <span>Загадай желание и потуши свечи</span>
+
+        <span class="tooltip-wrap">
+          <button
+            type="button"
+            class="tooltip-trigger"
+            aria-label="Как потушить свечи"
+            aria-describedby="candle-tooltip"
+          >?</button>
+
+          <span
+            class="tooltip-bubble"
+            id="candle-tooltip"
+            role="tooltip"
+          >
+            Проведи по огонькам мышкой или коснись их
+          </span>
+        </span>
+      </div>
+
+      <div id="surprise" hidden>
+        <h2>Пусть всё загаданное сбудется ♡</h2>
+        <p class="small">А кое-что приятное уже ждёт тебя.</p>
+
+        <a id="gift" class="gift-button"
+           target="_blank" rel="noopener noreferrer">
+          Открыть мой подарок <span>↗</span>
+        </a>
+
+        <button class="text-button" id="reset">
+          Загадать ещё одно желание
+        </button>
+      </div>
+    </section>
+
+    <p class="closing">
+    </p>
+  </main>
+</body>
+</html>
